@@ -8,6 +8,7 @@ import 'animate.css'
 export const Form = ({title , buttoncontent , exit=''}) =>{
 
     const [userReducer , dispatch] = useContext(UserContext)
+    console.log(userReducer)
     const [send , setSend] = useState(false)
 
     const [name , setName] = useState('')
