@@ -1,0 +1,101 @@
+.list{
+    display: grid;
+    grid-template-columns:repeat(auto-fit , 280px);
+    justify-content:center;
+    gap:30px 10px;
+    margin:50px 0;
+    width:100%;
+}
+
+.list__card{
+    width:280px;
+    padding:20px 0;
+    border:2px solid #000000;
+    border-top-left-radius:40px;
+    border-bottom-right-radius:40px;
+    text-align:center;
+    display: grid;
+    justify-content: center;
+    gap:10px;
+    transition: all .3s ease-in-out;
+    z-index: 10;
+}
+
+
+.list__buttons{
+    margin-top:7px;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.list__button{
+    padding: 10px;
+    cursor:pointer;
+    border:none;
+    border-radius:5px;
+    width:70px;
+}
+
+.list__button--remove{
+    background-color: #f00;
+    color:#fff;
+}
+
+.list__button--edit{
+    background-color:#f8f8f8;
+   
+}
+
+.list__item--bold{
+    font-weight: bold;
+}
+
+
+.list__update{
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+    gap:1px;
+}
+
+.input__hide{
+    height:0%;
+    width: 46%;  
+    display: none;
+}
+
+.input__show{
+    height: 100%;
+    padding:4px;
+    width: 40%;
+    font-size:.7em;
+}
+
+.button_hide{
+    display: none;
+}
+.button_active{
+    padding:5px;
+    background-color: #0f0;
+    width:30px;
+    height: 30px;
+    margin:0 auto;
+    border:.3px solid #000;
+    border-radius:50%;
+    outline:none;
+    font-size:.8em;
+    cursor:pointer;
+}
+
+.button_active:hover{
+    background-color: rgb(10, 102, 33);
+}
+
+@media screen and (min-width:768px) {
+    .list__card:hover{
+        border-radius:0px;
+        background-color: rgba(0, 0, 0, 0.055);
+    }
+}
