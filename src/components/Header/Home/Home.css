@@ -1,37 +1,39 @@
 .main{
     display: grid;
     gap:1em;
-    width:100%;
 }
 
 .main__title{
     text-align: center;
-    font-size: 2.3em;
+    font-size: 1.3em;
     font-weight:600;
     margin:10px 0;
 }
-.main__image > img{
-    width:100%;
+.main__image {
+    width:90%;
     height:auto;
     object-fit: cover;
     border-radius:10px;
     box-shadow:0px 4px 6px #000;
+    margin:0 auto;
 }
 
 
 .main__buttons{
     display:flex;
-    gap:10px;
+    gap:5px;
     justify-content:space-around;
     margin:30px 10px;
 }
 
 .main__links{
     color:#fff;
-    padding:15px 0 ;
-    width:200px;
+    padding:10px 0 ;
+    width:110px;
+    font-size:.9em;
     text-align:center;
-    border-radius:10px;
+    border-radius:4px;
+
 }
 
 .main__links--add{
@@ -46,6 +48,20 @@
 
 
 @media screen and (min-width:800px){
+
+    .main{
+        width:100%;
+    }
+
+
+
+    .main__title{
+        text-align: center;
+        font-size: 2.1em;
+        font-weight:600;
+        margin:10px 0;
+    }
+
     .main__links--add:hover{
         transition:all .3s ease-in-out;
         background-color:rgb(10, 51, 2);
@@ -58,10 +74,23 @@
         box-shadow:0px 8px 5px rgb(6, 1, 34);
     }
 
-    .main__image{
-        width:100%;
+    
+    .main__buttons{
+        display:flex;
+        justify-content:space-around;
+        margin:30px 10px;
     }
-    .main__image > img{
+    
+    .main__links{
+        color:#fff;
+        padding:15px 0 ;
+        width:200px;
+        font-size:1.2em;
+        text-align:center;
+        border-radius:10px;
+    }
+
+    .main__image {
         width:100%;
         object-fit: cover;
         border-radius:10px;

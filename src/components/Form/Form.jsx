@@ -32,7 +32,7 @@ export const Form = ({title , buttoncontent , exit=''}) =>{
                     </div>
                     <div className='form__group'>
                         <label className='form__label' htmlFor="form__email">Email User:</label>
-                        <input onChange={(e)=> setEmail(e.target.value)} id="form__email" className='form__control' type="email" placeholder='Email user:' />
+                        <input onChange={(e)=> setEmail(e.target.value)} id="form__email" className='form__control' type="text" placeholder='Email user:' />
                     </div>
                     
                    

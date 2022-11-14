@@ -1,9 +1,8 @@
 header{
     background: #3C3B3F;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1a1915, #101011);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #2b291f, #1a191b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-z-index: 300;
-
+    background: -webkit-linear-gradient(to right, #1a1915, #101011);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2b291f, #1a191b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    z-index: 300;
 }
 
 .container{
@@ -11,7 +10,8 @@ z-index: 300;
     max-width:1200px;
     margin:0 auto;
     display: flex;
-    justify-content:space-between;
+    flex-direction:column ;
+    gap: 20px;
     align-items:center;
     padding:20px 0;
     position: relative;
@@ -45,4 +45,11 @@ z-index: 300;
 .nav__link:hover{
     transition:color .3s ease-in-out;
     color:#fff;
+}
+
+@media screen and (min-width: 768px) {
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
