@@ -65,7 +65,7 @@
     background-color: #000000;
     color:#fff;
     position: absolute;
-    top:80px;
+    top:87px;
     left:0;
     clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
 }
@@ -73,23 +73,27 @@
 
 .form__send{
     position: absolute;
-    top:35px;
-    border:1px solid #0f0;
+    top:87px;
     background-color: #125512;
     transition: all .5s ease-in-out;
-    padding:10px 20px;
-    box-shadow: 0 1px 6px 8px #07ce07;
+    padding:8px 15px;
     color:#fff;
 }
 
+
+
 .form__message{
-    right:-470px;
+    right: 0px;
     transition: all .5s ease-in-out;
+    opacity: 0;
 }
+
 .form__message--show{
-    right:-170px;
-    transition: all .5s ease-in-out;
+    opacity: 1;
+    right:0px;
 }
+
+
 
 @media screen and (min-width: 768px) {
     .form{
@@ -116,5 +120,19 @@
         width:130px;
         font-size:1em;
         top:35px;
+    }
+
+    .form__send{
+        top:35px;
+        padding:12px 45px;
+        box-shadow: 0 1px 6px 8px #07ce07;
+    }
+    .form__message{
+        right:-470px;
+        transition: all .5s ease-in-out;
+    }
+    .form__message--show{
+        right:-10px;
+        transition: all .5s ease-in-out;
     }
 }
